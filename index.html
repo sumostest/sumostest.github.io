@@ -745,8 +745,7 @@ a:hover, a:focus {
 </div>
 <div class="kc-elm kc-css-333587" style="height: 30px; clear: both; width:100%;"></div>
 <div class="kc-elm kc-css-3734187 kc-raw-code"><script>
-var newDiv = $("</p>
-<div>", {class: "navigation-top", id: "blur-header", style: "overflow: hidden; filter: blur(10px); background-image: url(https://sumos.000webhostapp.com/wp-content/uploads/2018/06/cropped-MG_0679.jpg); z-index: 1; display: block; height: 75px; position: fixed; margin: -10px-20px -20px -10px;"});
+var newDiv = $("</p><div>", {class: "navigation-top", id: "blur-header", style: "overflow: hidden; filter: blur(10px); background-image: url(https://sumos.000webhostapp.com/wp-content/uploads/2018/06/cropped-MG_0679.jpg); z-index: 1; display: block; height: 75px; position: fixed; margin: -10px-20px -20px -10px;"});
 //newDiv.appendTo($("#masthead"));
 x = document.getElementsByClassName("site-title")[0];
 y = document.createElement("img");
@@ -1323,8 +1322,8 @@ table {
 display: none;
 }
 </style>
-<p><script></p>
-<p>(function(){
+<script>
+(function(){
     // Vertical Timeline - by CodyHouse.co
 	function VerticalTimeline( element ) {
 		this.element = element;
@@ -1333,8 +1332,8 @@ display: none;
 		this.contents = this.element.getElementsByClassName("js-cd-content");
 		this.offset = 0.8;
 		this.hideBlocks();
-	};</p>
-<p>	VerticalTimeline.prototype.hideBlocks = function() {
+	};
+	VerticalTimeline.prototype.hideBlocks = function() {
 		//hide timeline blocks which are outside the viewport
 		if ( !"classList" in document.documentElement ) {
 			return;
@@ -1348,8 +1347,8 @@ display: none;
 				}
 			})(i);
 		}
-	};</p>
-<p>	VerticalTimeline.prototype.showBlocks = function() {
+	};
+	VerticalTimeline.prototype.showBlocks = function() {
 		if ( ! "classList" in document.documentElement ) {
 			return;
 		}
@@ -1393,7 +1392,7 @@ display: none;
 		scrolling = false;
 	};
 })();
-</script></p>
+</script>
 <style>
 .arrow-right {
   width: 0; 
@@ -1531,9 +1530,7 @@ $("#wpadminbar").css("display", "none")
 </script></div>
 <div class="kc-elm kc-css-4105090 kc-raw-code"><script>
 $(document).ready(function(){
-$('</p>
-<div id="logo" class="logo initial-logo"></div>
-<p>').appendTo("#site-navigation");
+$('</p><div id="logo" class="logo initial-logo"></div><p>').appendTo("#site-navigation");
 $("#logo").html("<span class='logo-text'>S</span>");
 $(".menu-scroll-down").css("display", "none");
 $(".menu-toggle").attr("data-toggle", "collapse").attr("data-target", "#top-menu").attr("aria-controls", "top-menu");
@@ -1542,8 +1539,8 @@ $(document).scroll(function () {
     var $nav = $(".navigation-top");
     $nav.toggleClass('scrolled', $nav.offset().top > $(".site-content-contain").offset().top);
 $("#logo").toggleClass('after-logo', $nav.offset().top > $(".site-content-contain").offset().top);
-  });</p>
-<p>if(safari_computer){
+  });
+if(safari_computer){
     alert("Due to incompatibilities and inconsistencies with Safari on a non-mobile device, we must apologize for discrepancies and dysfunctional activity that may occur during your visit to this website. We encourage you to either view this on your phone, or download Google Chrome. Please view at your leisure.");
 }
 var timeline_elements = new Array($($(".cd-timeline__block.js-cd-block").parent()).children().length);
@@ -1597,8 +1594,8 @@ $(this).children("div").children().css("opacity", "0.3");
     }, 250);
     }, 1000);
     }
-});*/</p>
-<p>setTimeout(function(){
+});*/
+setTimeout(function(){
 $("#wpadminbar").css("display", "none")
 }, 2000);
 });
